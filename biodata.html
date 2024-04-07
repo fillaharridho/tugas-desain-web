@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .nama,.alamat,.ttl,.Jenis-kelamin,.agama,.hobi,.motto {
+        display: grid;
+        grid-template-columns: max-content auto;
+        grid-column-gap: 10px;
+        align-items: center;
+        margin-bottom: 10px;
+        max-width: 300px;
+        display: flex;
+        flex-direction: reverse-row;
+        align-items: center;
+      }
+      
+      .input-group {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>BIODATA</h2>
+
+
+    <!--nama-->
+    <form action="/action_page.php">
+      <div class="nama">
+        <tr></tr>
+        <td><label for="fname">Nama:</label></td>
+        <div class="input-group">
+          <input type="text"id="fname"name="fname"placeholder="nama"size="20"/>
+        </div>
+      </tr>
+      </div>
+
+
+
+
+
+
+    <!--alamat-->
+      <div class="alamat">
+        <label for="lname">Alamat</label>
+        <div class="input-group">
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="alamat anda"
+            size="50"
+          />
+        </div>
+      </div>
+
+
+
+
+
+
+
+    <!--ttl-->
+      <div class="ttl">
+        <label for="tanggallahir">TTL:</label>
+        <div class="input-group">
+          <input
+            type="text"
+            id="tempat"
+            name="tempat"
+            placeholder="Tempat"
+            size="40"
+          />
+          <select id="tanggal" name="tanggal">
+            <option value="tanggal">tanggal</option>
+            <option value="tanggal">1</option>
+            <option value="tanggal">2</option>
+            <option value="tanggal">3</option>
+            <option value="tanggal">4</option>
+            <option value="tanggal">5</option>
+            <option value="tanggal">6</option>
+            <option value="tanggal">7</option>
+            <option value="tanggal">8</option>
+            <option value="tanggal">9</option>
+            <option value="tanggal">10</option>
+            <option value="tanggal">11</option>
+            <option value="tanggal">12</option>
+            <option value="tanggal">13</option>
+            <option value="tanggal">14</option>
+            <option value="tanggal">15</option>
+            <option value="tanggal">16</option>
+            <option value="tanggal">17</option>
+            <option value="tanggal">18</option>
+            <option value="tanggal">19</option>
+            <option value="tanggal">20</option>
+            <option value="tanggal">21</option>
+            <option value="tanggal">22</option>
+            <option value="tanggal">23</option>
+            <option value="tanggal">24</option>
+            <option value="tanggal">25</option>
+            <option value="tanggal">26</option>
+            <option value="tanggal">27</option>
+            <option value="tanggal">28</option>
+            <option value="tanggal">29</option>
+            <option value="tanggal">30</option>
+            <option value="tanggal">31</option>
+          </select>
+          <select id="bulan" name="bulan">
+            <option value="bulan">bulan</option>
+            <option value="bulan">januari</option>
+            <option value="bulan">februari</option>
+            <option value="bulan">maret</option>
+            <option value="bulan">april</option>
+            <option value="bulan">mei</option>
+            <option value="bulan">juni</option>
+            <option value="bulan">juli</option>
+            <option value="bulan">agustus</option>
+            <option value="bulan">september</option>
+            <option value="bulan">oktober</option>
+            <option value="bulan">november</option>
+            <option value="bulan">desember</option>
+          </select>
+          <select id="tahun" name="tahun">
+            <option value="tahun">tahun</option>
+            <option value="tahun">1998</option>
+            <option value="tahun">1999</option>
+            <option value="tahun">2000</option>
+            <option value="tahun">2001</option>
+            <option value="tahun">2002</option>
+            <option value="tahun">2003</option>
+            <option value="tahun">2004</option>
+            <option value="tahun">2005</option>
+            <option value="tahun">2006</option>
+          </select>
+        </div>
+      </div>
+
+
+
+    <!--jenis kelamin-->
+      <div class="Jenis-kelamin">
+        <label for="gender">Jenis Kelamin:</label>
+        <div class="input-group">
+          <input type="radio" id="male" name="gender" value="Laki-laki" />
+          <label for="male">Laki-laki</label>
+          <input type="radio" id="female" name="gender" value="Perempuan" />
+          <label for="female">Perempuan</label>
+        </div>
+      </div>
+
+
+
+
+
+
+    <!--agama-->
+    <div class="agama">
+      <label for="agama">agama:</label>
+      <select id="agama" name="agama">
+        <option value="agama">agama</option>
+        <option value="islam">islam</option>
+        <option value="kristen">kristen</option>
+        <option value="budha">budha</option>
+        <option value="katolik">katolik</option>
+      </select>
+    </div>
+
+
+
+
+
+
+    <!--hobi-->
+      <div class="hobi">
+        <label for="hobi">hobi:</label>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="berenang" />
+        <label for="vehicle1"> berenang</label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="nonton" />
+        <label for="vehicle2"> nonton</label>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="game" />
+        <label for="vehicle3"> game</label>
+        <input
+          type="checkbox"
+          id="vehicle3"
+          name="vehicle3"
+          value="trevelling"
+        />
+        <label for="vehicle3"> trevelling</label>
+      </div>
+
+
+    <!--motto-->
+      <div class="motto">
+        <label for="motto">motto :</label>
+        <td><textarea name="message" rows="10" cols="30" placeholder="Isi motto anda disini."></textarea></td>
+      </div>
+
+      <input type="submit" value="Submit" />
+      <input type="submit" value="reset" />
+    </form>
+    </script>
+  </body>
+</html>
