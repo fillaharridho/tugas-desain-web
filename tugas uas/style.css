@@ -1,1 +1,166 @@
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: #555;
+}
+
+main {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home main {
+  text-align: center;
+}
+
+.home .hero {
+  background: url("img/wpp.jpeg") no-repeat center center/cover;
+  color: #fff;
+  padding: 200px 20px;
+  border-radius: 20px;
+}
+
+.home .hero h2 {
+  margin: 0 0 20px;
+  font-size: 2.5em;
+}
+
+.home .hero p {
+  font-size: 1.2em;
+}
+
+.home .hero .btn:hover {
+  background-color: #0056b3;
+}
+
+.home .features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.home .feature {
+  text-align: center;
+  width: 30%;
+}
+
+.home .feature img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about .intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about .team {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about .member {
+  text-align: center;
+  width: 30%;
+}
+
+.about .member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.contact .contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
